@@ -7,10 +7,11 @@ source 'https://rubygems.org'
 
  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
  gem 'rails', '~> 5.1.2'
+ gem 'devise'
+ gem 'bootstrap-sass'
 
  group :production do
    # Use pg as the production database for Active Record
-   gem 'pg'
  end
 
  group :development do
@@ -33,7 +34,7 @@ source 'https://rubygems.org'
  # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
  gem 'jbuilder', '~> 2.5'
 
- gem 'thor', '0.19.1'
+ gem 'thor', '0.20.0'
 
  group :development do
    gem 'listen', '~> 3.0.5'
