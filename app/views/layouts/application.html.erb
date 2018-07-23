@@ -11,9 +11,8 @@
   <div class='container'>
     <div class='inner-wrapper'>
        <ul class='nav nav-tabs'>
-        <li class='blocioff-logo' ><%= link_to 'Blocitoff', root_url %></li>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "About", welcome_about_path %></li>
+        <li class='blocitoff-logo' ><%= link_to 'Blocitoff', root_url %></li>
+         <li><%= link_to "Blocitoff", root_path %></li>
         <div class='user-info pull-right'>
           <% if user_signed_in? %>
            Signed in as: <strong><%= current_user.email %></strong> |

@@ -3,9 +3,7 @@ Rails.application.routes.draw do
 
   get 'welcome/about'
 
-  root 'welcome#index'
-
-  get 'users/show'
+  root 'users#show'
 
   devise_for :users, controllers: { confirmations: 'confirmations' }
 end
