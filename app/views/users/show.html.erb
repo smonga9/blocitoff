@@ -1,1 +1,11 @@
 <h2>Your To-Do List</h2>
+<% if current_user %>
+    <div class="col-md-8">
+        <div class='js-items'>
+            <%= render @items %>
+        </div>
+        <div class='new-item'>
+            <%= render "items/form", item: Item.new %>
+        </div>
+    </div>
+<% end %>

@@ -17,6 +17,9 @@ class UsersController < ApplicationController
       else
       @user = current_user
       end
+
+      @item = Item.new
+      @items = Item.where(@user == current_user)
     end
 
     private

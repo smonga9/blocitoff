@@ -5,5 +5,7 @@ Rails.application.routes.draw do
 
   root 'users#show'
 
+  resources :items, only: [:create]
+
   devise_for :users, controllers: { confirmations: 'confirmations' }
 end
