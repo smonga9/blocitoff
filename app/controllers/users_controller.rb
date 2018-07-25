@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       end
 
       @item = Item.new
-      @items = Item.where(@user == current_user)
+      @items = @user.items
     end
 
     private
